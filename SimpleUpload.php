@@ -1,5 +1,5 @@
 <?php
-    function SimpleUpload($fieldname, $path, $JSONproperty) {
+    function SimpleUpload($fieldname, $path) {
        $Result = array();
        if (is_array($_FILES[$fieldname]["tmp_name"])) {
          foreach ($_FILES[$fieldname]["tmp_name"] as $key => $value) {
