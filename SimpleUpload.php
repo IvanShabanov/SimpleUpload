@@ -4,7 +4,7 @@
     /* $fieldname - input name */
     /* $multiple = false/true - if need multiple upload */
     /* $fieldoptions =  some opltion, like class (example: 'class="files"')*/
-    function FormField($fieldname, $multiple = false, $fieldoptions = '';) {
+    function FormField($fieldname, $multiple = false, $fieldoptions = '') {
       if ($multiple) {
          return '<input type="file" name="'.$fieldname.'[]" multiple '.$fieldoptions.'/>';
       }
