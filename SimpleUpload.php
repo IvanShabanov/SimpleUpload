@@ -1,12 +1,14 @@
 <?php
+
     /* Retunr html input field for files */
     /* $fieldname - input name */
     /* $multiple = false/true - if need multiple upload */
-    function FormField($fieldname, $multiple = false) {
+    /* $fieldoptions =  some opltion, like class (example: 'class="files"')*/
+    function FormField($fieldname, $multiple = false, $fieldoptions = '';) {
       if ($multiple) {
-         return '<input type="file" name="'.$fieldname.'[]" multiple />';
+         return '<input type="file" name="'.$fieldname.'[]" multiple '.$fieldoptions.'/>';
       }
-      return '<input type="file" name="'.$fieldname.'" />';
+      return '<input type="file" name="'.$fieldname.'" '.$fieldoptions.' />';
     }
     
     /* Return fieldnames array */
